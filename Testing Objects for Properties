@@ -1,0 +1,15 @@
+function checkObj(obj, checkProp) {
+ 
+ var myObj = {
+   gift: "pony",
+   pet: "kitten",
+   bed: "sleigh",
+   city: "Seattle",
+   };
+   
+   if(obj.hasOwnProperty(checkProp)){
+     return obj[checkProp];
+   }else {
+     return "Not Found";
+   }
+}
